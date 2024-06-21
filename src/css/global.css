@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --color-black: rgba(0, 0, 0, 1);
+  --gradient-blue: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  --white: rgba(255, 255, 255, 1);
+  --orange: rgba(235, 155, 0, 1);
+  --light-gray: rgba(235, 236, 238, 1);
+  --dark-blue:rgba(0, 47, 82, 1);
+}

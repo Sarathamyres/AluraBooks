@@ -1,0 +1,99 @@
+header {
+  width: 100%;
+}
+.header-container {
+  padding: 1.5em 0;
+}
+.header-container nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav .container-left {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.container-list,
+.icon-list p,
+.container-left h1 {
+  display: none;
+}
+.container-right ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+@media (min-width: 1024px) {
+  .icon-bars,
+  .icon-heart {
+    display: none;
+  }
+  .container-list,
+  .container-left h1 {
+    display: block;
+  }
+  .header-container {
+    padding: 2em 0;
+  }
+  .header-container nav {
+    align-items: center;
+  }
+  .container-left .title {
+    font-family: "Josefin Sans";
+    font-size: 3em;
+  }
+  .container-left .title span {
+    font-weight: 400;
+  }
+  .container-list ul {
+    display: flex;
+    list-style: none;
+    font-family: "poppins";
+    font-size: 1.6em;
+    gap: 3em;
+  }
+  .container-right ul {
+    gap: 61px;
+  }
+}
+@media (min-width: 1400px) {
+  .icon-list p {
+    display: block;
+  }
+  .header-container {
+    padding: 3em 0;
+  }
+  .header-container nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-left{
+    position: relative;
+    padding-left: 11em;
+  }
+  .container-list{
+    display: flex;
+    position: absolute;
+    left: 40em;
+  }
+  .container-right ul .desktop{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 200px;
+    height: 50px;
+  }
+  .container-right ul {
+    gap: 0px;
+  }
+  .container-right ul li p{
+    font-family: "poppins";
+    font-size: 1.6em;
+    }
+    .container-right .icon-bag{
+      width: 38px;
+    }
+    .container-right .icon-user{
+      width: 25px;
+    }
+}

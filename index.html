@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d4deb6b8e7.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/global.css">
+  <link rel="stylesheet" href="src/css/header.css">
+  <link rel="stylesheet" href="src/css/header-banner.css">
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/carousel.css">
+  <link rel="stylesheet" href="src/css/footer.css">
+  <title>AluraBooks</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <nav>
+        <div class="container-left">
+          <img src="src/icons/Menu.svg" alt="image icon menu" class="icons-header icon-bars">
+          <img src="src/images/Logo.svg" alt="Logo do AluraBooks" class="logo-header">
+          <h1 class="title">Alura<span>Books</span></h1>
+        </div>
+        <div class="container-list">
+          <ul>
+            <li class="list-item">Categorias</li>
+            <li class="list-item">Favoritos</li>
+            <li class="list-item">Minha Estante</li>
+          </ul>
+        </div>
+        <div class="container-right">
+          <ul>
+            <li class="icon-list">
+              <img src="src/icons/Favoritos.svg" alt="image icon heart" class="icons-header icon-heart">
+            </li>
+            <li class="icon-list desktop">
+              <img src="src/icons/Compras.svg" alt="image icon bag" class="icons-header icon-bag">
+              <p>Minha sacola</p>
+            </li>
+            <li class="icon-list desktop">
+              <img src="src/icons/Usuario.png" alt="image icon user" class="icons-header icon-user">
+              <p>Meu perfil</p>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+    <div class="header-banner">
+      <div class="text">
+        <h2>Já sabe por onde começar?</h2>
+        <p>Encontre em nossa estante o que precisa para o seu desenvolvimento!</p>
+      </div>
+      <input type="text" placeholder="Qual será sua próxima leitura?" class="barra-search">
+    </div>
+  </header>
+  <main>
+    <section class="carousels-cards">
+      <h2 class="title-main">ÚLTIMOS LANÇAMENTOS</h2>
+      <div class="main-container">
+        <div class="carousel carousel1">
+          <i class="fa-solid fa-chevron-left chevron-left arrow"></i>
+          <div class="carousel-container">
+            <div class="gallery1">
+              <img src="src/images/ApacheKafka.png" alt="livro Apache Kafka e Spring Book" class="item-img">
+              <img src="src/images/Liderança.png" alt="livro Liderança em Design" class="item-img">
+              <img src="src/images/Javascript.png" alt="livro JavaScript Assertivo" class="item-img">
+              <img src="src/images/Guia Front-end.png" alt="livro Guia Front-End" class="item-img">
+              <img src="src/images/Arquitetura.png" alt="livro Arquitetura de software distribuido" class="item-img">
+              <img src="src/images/ReactNative.png" alt="livro React Native" class="item-img">
+              <img src="src/images/MetricasAgeis.png" alt="livro Métricas Ágeis" class="item-img">
+              <img src="src/images/Gestão2.png" alt="livro Gestão de produtos" class="item-img">
+              <img src="src/images/Construct2.png" alt="livro Construct 2" class="item-img">
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right chevron-right arrow"></i>
+        </div>
+        <div class="card">
+          <div class="text-card">
+            <h2>Talvez você também se interesse por...</h2>
+            <h3>Angular 11 e Firebase</h3>
+            <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+            <div class="img-icon-card">
+              <img src="src/icons/Favoritos.svg" alt="icon image heart" class="icons-main">
+              <img src="src/icons/Compras.svg" alt="icon image bag" class="icons-main">
+            </div>
+          </div>
+          <div class="image-button-card">
+            <img src="src/images/angular-logo.png" alt="logo angular">
+            <a href="#">
+              <button>Saiba mais</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="title-main">MAIS VENDIDOS</h2>
+      <div class="main-container">
+        <div class="carousel carousel2">
+          <i class="fa-solid fa-chevron-left chevron-left arrow"></i>
+          <div class="carousel-container">
+            <div class="gallery2">
+              <img src="src/images/Portugol.png" alt="livro Portugol">
+              <img src="src/images/Tuning.png" alt=" livro Tuning">
+              <img src="src/images/UX.png" alt="livro UX">
+              <img src="src/images/Liderança.png" alt="livro Liderança em Design" class="item-img">
+              <img src="src/images/Javascript.png" alt="livro JavaScript Assertivo" class="item-img">
+              <img src="src/images/Guia Front-end.png" alt="livro Guia Front-End" class="item-img">
+              <img src="src/images/Arquitetura.png" alt="livro Arquitetura de software distribuido" class="item-img">
+              <img src="src/images/ApacheKafka.png" alt="livro Apache Kafka e Spring Book" class="item-img">
+              <img src="src/images/Gestão.png" alt=" livro Gestão de produtos">
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right chevron-right arrow"></i>
+        </div>
+        <div class="card">
+          <div class="text-card">
+            <div class="stars"></div>
+            <h2>AUTORA DO MÊS</h2>
+            <h3>Juliana Agarikov</h3>
+            <p>Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+            <div class="img-icon-card">
+              <img src="src/icons/Favoritos.svg" alt="icon image heart" class="icons-main">
+              <img src="src/icons/Compras.svg" alt="icon image bag" class="icons-main">
+            </div>
+          </div>
+          <div class="image-button-card">
+            <img src="src/images/Perfil-escritora.png" alt="logo angular">
+            <a href="#">
+              <button>Saiba mais</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="list-topics">
+      <div class="list-topics-container">
+        <h2>TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul>
+          <li>
+            <p><a href="#">Android</a></p>
+          </li>
+          <li>
+            <p><a href="#">oo</a></p>
+          </li>
+          <li>
+            <p><a href="#">Marketing Digital</a></p>
+          </li>
+          <li>
+            <p><a href="#">Agile</a></p>
+          </li>
+          <li>
+            <p><a href="#">Startup</a></p>
+          </li>
+          <li>
+            <p><a href="#">HTML & CSS</a></p>
+          </li>
+          <li>
+            <p><a href="#">Java</a></p>
+          </li>
+          <li><a href="#">Python</a></li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="text">
+        <h2>Fique por dentro das novidades!</h2>
+        <p>Atualizações de e-books, novos livros, promoções e outros.</p>
+      </div>
+      <div class="register-email">
+        <a href="#">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Cadastre seu e-mail</span>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="group-alura">
+      <h2>Grupo Alura</h2>
+     <div class="group-alura-container">
+      <div class="education">
+        <h3>EDUCAÇÃO</h3>
+        <ul>
+          <li>
+            <img src="src/group-alura/Caelum.png" alt="logo">
+            <p>Caelum</p>
+          </li>
+          <li>
+            <img src="src/group-alura/CasaDoCodigo.png" alt="logo">
+            <p>Casa do Código</p>
+          </li>
+        </ul>
+      </div>
+      <div class="education-online">
+        <h3>EDUCAÇÃO ONLINE</h3>
+        <ul>
+          <li>
+            <img src="src/group-alura/Alura.png" alt="logo">
+            <p>Alura</p>
+          </li>
+          <li>
+            <img src="src/group-alura/AluraEmpresas.png" alt="logo">
+            <p>Alura para Empresas</p>
+          </li>
+          <li>
+            <img src="src/group-alura/AluraLATAM.png" alt="logo">
+            <p>Alura LATAM</p>
+          </li>
+          <li>
+            <img src="src/group-alura/AluraStart.png" alt="logo">
+            <p>Alura Start</p>
+          </li>
+          <li>
+            <img src="src/group-alura/MusicDot.png" alt="logo">
+            <p>MusicDot</p>
+          </li>
+          <li>
+            <img src="src/group-alura/AluraLingua.png" alt="logo">
+            <p>Alura Língua</p>
+          </li>
+          <li>
+            <img src="src/group-alura/PM3.png" alt="logo">
+            <p>PM3</p>
+          </li>
+        </ul>
+      </div>
+      <div class="comunidade">
+        <h3>COMUNIDADE</h3>
+        <ul>
+          <li>
+            <img src="src/group-alura/HipstersTech.png" alt="logo">
+            <p>Hipsters ponto Tech</p>
+          </li>
+          <li>
+            <img src="src/group-alura/ScubaDev.png" alt="">logo
+            <p>Scuba Dev</p>
+          </li>
+          <li>
+            <img src="src/group-alura/LayersTech.png" alt="logo">
+            <p>Layers ponto Tech</p>
+          </li>
+          <li>
+            <img src="src/group-alura/LikeABoss.png" alt="logo">
+            <p>Like a Boss</p>
+          </li>
+          <li>
+            <img src="src/group-alura/CarreiraSemFronteira.png" alt="logo">
+            <p>Carreira sem Fronteira</p>
+          </li>
+          <li>
+            <img src="src/group-alura/HipstersJobs.png" alt="logo">
+            <p>Hipsters ponto jobs</p>
+          </li>
+          <li>
+            <img src="src/group-alura/GUJ.png" alt="logo">
+            <p>GUJ</p>
+          </li>
+        </ul>
+      </div>
+     </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
