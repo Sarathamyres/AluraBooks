@@ -36,7 +36,12 @@ footer a {
   width: 350px;
   border-radius: 24px;
   padding: 1em;
+  padding-left: 4em;
   margin: 3em 0;
+}
+.register-email a:hover{
+  border: 1px solid var(--orange);
+  color: var(--orange);
 }
 .register-email a i {
   font-size: 1.6em;
