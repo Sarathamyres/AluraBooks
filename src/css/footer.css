@@ -39,40 +39,101 @@ footer a {
   padding-left: 4em;
   margin: 3em 0;
 }
-.register-email a:hover{
+.register-email a:hover {
   border: 1px solid var(--orange);
   color: var(--orange);
 }
 .register-email a i {
   font-size: 1.6em;
 }
-.group-alura h2 {
+.group-alura {
+  display: none;
+}
+.group-alura-mobile {
+  position: relative;
+  cursor: pointer;
+}
+.group-alura-mobile h2 {
   font-size: 2em;
   font-weight: 400;
-  padding: 1em 0 0 1em;
+  padding: 1em 1em 0 1em;
   cursor: pointer;
   color: var(--dark-blue);
 }
-.group-alura h2:hover{
-  opacity: 0.7;
+.group-alura-mobile h2:hover {
+  color: var(--orange);
 }
-.group-alura-container {
+.group-alura-list-mobile-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 2em 1em;
+}
+.group-alura-list-mobile-container ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-top: 1em;
+}
+.group-alura-list-mobile-container ul li {
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.group-alura-list-mobile {
+  display: none;
+  position: absolute;
+  top: 170em;
+  background: var(--white);
+  width: 100%;
+}
+.input-group-alura:checked ~ .group-alura-list-mobile {
+  display: block;
+}
+footer input[type="checkbox"] {
   display: none;
 }
+@media (max-width:321px){
+  .group-alura-list-mobile {
+    top: 185em;
+  }
+}
+@media (min-width:322px){
+  .group-alura-list-mobile {
+    top: 175em;
+  }
+
 @media (min-width: 701px) {
-  footer .container{
+  footer .container {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 @media (min-width: 1024px) {
+  .group-alura-mobile {
+    display: none;
+  }
+  .group-alura {
+    display: block;
+  }
   footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
     padding: 5em 0;
+  }
+  .group-alura h2 {
+    font-size: 2em;
+    font-weight: 400;
+    padding: 1em 0 0 1em;
+    cursor: pointer;
+    color: var(--dark-blue);
+  }
+  .group-alura h2:hover {
+    color: var(--orange);
   }
   .group-alura-container {
     display: flex;

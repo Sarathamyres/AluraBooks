@@ -10,10 +10,11 @@ header a {
 .header-container nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 nav .container-left {
   display: flex;
-  gap: 1em;
+  gap: 3em;
   align-items: center;
 }
 .container-list,
@@ -21,21 +22,29 @@ nav .container-left {
 .container-left h1 {
   display: none;
 }
+.icons-header {
+  font-size: 35px;
+  color: var(--dark-blue);
+}
+.icons-header:hover {
+  color: var(--orange);
+}
 .container-right ul {
   display: flex;
-  align-items: center;
   list-style: none;
+  gap: 3em;
 }
-.container-right ul li:hover,
-.icon-bars:hover {
-  opacity: 0.6;
+.icon-list a:hover{
+  color: var(--orange);
 }
+
 @media (min-width: 700px) and (max-width: 1024px) {
+  .header-container nav{
+    gap: 30em;
+  }
   .container-left img {
-    margin-left: 2em;
   }
   .container-right ul li {
-    margin-left: 2em;
   }
 }
 @media (min-width: 1024px) {
@@ -56,6 +65,9 @@ nav .container-left {
   .container-left .title {
     font-family: "Josefin Sans";
     font-size: 3em;
+  }
+  nav .container-left {
+    gap: 1em;
   }
   .container-left .title span {
     font-weight: 400;
@@ -104,9 +116,9 @@ nav .container-left {
   }
   .category {
     cursor: pointer;
-    /*label de categorias*/ 
+    /*label de categorias*/
   }
-  
+
   .div-list-category ul {
     list-style: none;
   }
@@ -132,7 +144,11 @@ nav .container-left {
   }
   .container-left {
     position: relative;
-    padding-left: 11em;
+    left: 10em;
+  }
+  .container-left .logo-header{
+    width: 50px;
+
   }
   .container-list {
     display: flex;
@@ -153,11 +169,9 @@ nav .container-left {
     font-family: "poppins";
     font-size: 1.6em;
   }
-  .container-right .icon-bag {
-    width: 38px;
-  }
-  .container-right .icon-user {
-    width: 25px;
+  
+  .icon-heart-header {
+    display: none;
   }
   .div-list-category {
     left: 0em;

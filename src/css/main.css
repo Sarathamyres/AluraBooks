@@ -45,15 +45,24 @@ main {
   justify-content: space-between;
   gap: 10px;
 }
-.text-card img {
-  width: 50px;
-}
 .card .text-card h2 {
   font-size: 1.6em;
 }
 .card .text-card h3 {
   font-size: 1.6em;
   color: var(--dark-blue);
+}
+.icon-card ul {
+  font-size: 25px;
+  color: var(--dark-blue);
+  list-style: none;
+  display: flex;
+}
+.icon-card .icons-main:hover {
+  color: var(--orange);
+}
+.icons-main.icon-bag {
+  margin-left: 0.5em;
 }
 .image-button-card img {
   width: 200px;
@@ -122,6 +131,7 @@ main {
   flex-wrap: wrap;
   padding: 1em;
   margin: 0.5em 0;
+  transition: 1s;
 }
 .list-topics-container ul li:hover {
   background: var(--gradient-blue);
@@ -134,9 +144,53 @@ main {
 .list-topics a:hover {
   color: var(--orange);
 }
-@media (min-width: 701px) {
-  
+.card-mobile {
+  display: none;
+}
+@media (max-width: 427px) {
   .card {
+    display: none;
+  }
+  .card-mobile {
+    display: block;
+    padding: 2em 1em;
+    background: var(--white);
+  }
+  .card-mobile .card-mobile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 5em;
+  }
+
+  .card-mobile .image-card {
+    flex: 0 0 auto;
+    width: 123px;
+  }
+
+  .card-mobile .text-card {
+    display: flex;
+    flex-direction: column;
+    margin: auto 1em;
+     max-width: 217px;
+    max-height: 125px; 
+    overflow: auto; 
+  }
+  .card-mobile .icon-button {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 2em;
+  }
+  .card-mobile .icon-button .button-card {
+    width: 100%;
+  }
+  .card-mobile .icon-button .icon-card {
+    padding: 0 1em 0 0;
+  }
+}
+@media (min-width: 701px) {
+  .card{
     width: 60%;
     justify-content: space-between;
   }
@@ -145,6 +199,9 @@ main {
   }
 }
 @media (min-width: 1400px) {
+  .card-mobile{
+    display: none;
+  }
   .main-container {
     flex-direction: row;
     justify-content: center;
@@ -162,7 +219,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 500px;
+    width: 50%;
     padding: 2em;
     flex-wrap: wrap;
   }

@@ -24,7 +24,7 @@
     <div class="header-container">
       <nav>
         <div class="container-left">
-          <img src="src/icons/Menu.svg" alt="image icon menu" class="icons-header icon-bars">
+          <i class="fa-solid fa-bars icons-header icon-bars"></i>
           <div class="list-hamburger">
             <h2>Categorias</h2>
             <ul>
@@ -85,18 +85,20 @@
           <ul>
             <li class="icon-list">
               <a href="#">
-                <img src="src/icons/Favoritos.svg" alt="image icon heart" class="icons-header icon-heart">
+                <i class="fa-regular fa-heart icons-header icon-heart-header">
+                </i>
               </a>
             </li>
             <li class="icon-list desktop">
               <a href="#">
-                <img src="src/icons/Compras.svg" alt="image icon bag" class="icons-header icon-bag">
+                <i class="fa-solid fa-bag-shopping
+               icons-header"></i>
                 <p>Minha sacola</p>
               </a>
             </li>
             <li class="icon-list desktop">
               <a href="#">
-                <img src="src/icons/Usuario.png" alt="image icon user" class="icons-header icon-user">
+                <i class="fa-regular fa-circle-user icons-header user-icon-item"></i>
                 <p>Meu perfil</p>
               </a>
             </li>
@@ -139,9 +141,19 @@
             <h2>Talvez você também se interesse por...</h2>
             <h3>Angular 11 e Firebase</h3>
             <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
-            <div class="img-icon-card">
-              <img src="src/icons/Favoritos.svg" alt="icon image heart" class="icons-main">
-              <img src="src/icons/Compras.svg" alt="icon image bag" class="icons-main">
+            <div class="icon-card">
+              <ul>
+                <li class="solid-heart hidden">
+                  <i class="fa-solid fa-heart icons-main" style="color: #cb1010;"></i>
+                </li>
+                <li class="heart">
+                  <i class="fa-regular fa-heart icons-main ">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-bag-shopping icons-main icon-bag"></i>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="image-button-card">
@@ -149,6 +161,38 @@
             <a href="#">
               <button>Saiba mais</button>
             </a>
+          </div>
+        </div>
+        <div class="card-mobile">
+          <div class="card-mobile-container">
+            <div class="image-card image-button-card">
+              <img src="src/images/angular-logo.png" alt="logo angular">
+            </div>
+            <div class="text-card">
+              <h2>Talvez você também se interesse por...</h2>
+              <h3>Angular 11 e Firebase</h3>
+              <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+            </div>
+          </div>
+          <div class="icon-button">
+            <div class="icon-card">
+              <ul>
+                <li class="solid-heart hidden">
+                  <i class="fa-solid fa-heart icons-main" style="color: #cb1010;"></i>
+                </li>
+                <li class="heart">
+                  <i class="fa-regular fa-heart icons-main"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-bag-shopping icons-main icon-bag"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="button-card image-button-card">
+              <a href="#">
+                <button>Saiba mais</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -173,22 +217,63 @@
         </div>
         <div class="card">
           <div class="text-card">
-            <div class="stars"></div>
-            <h2>AUTORA DO MÊS</h2>
-            <h3>Juliana Agarikov</h3>
-            <p>Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
-            <div class="img-icon-card">
-              <img src="src/icons/Favoritos.svg" alt="icon image heart" class="icons-main">
-              <img src="src/icons/Compras.svg" alt="icon image bag" class="icons-main">
+            <h2>Talvez você também se interesse por...</h2>
+            <h3>Angular 11 e Firebase</h3>
+            <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+            <div class="icon-card">
+              <ul>
+                <li class="solid-heart hidden">
+                  <i class="fa-solid fa-heart icons-main" style="color: #cb1010;"></i>
+                </li>
+                <li class="heart">
+                  <i class="fa-regular fa-heart icons-main ">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-bag-shopping icons-main icon-bag"></i>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="image-button-card">
-            <img src="src/images/Perfil-escritora.png" alt="logo angular">
+            <img src="src/images/Perfil-escritora.png" alt="Perfil escritora">
             <a href="#">
               <button>Saiba mais</button>
             </a>
           </div>
         </div>
+          <div class="card-mobile">
+            <div class="card-mobile-container">
+              <div class="image-card image-button-card">
+                <img src="src/images/Perfil-escritora.png" alt="Perfil escritora">
+              </div>
+              <div class="text-card">
+                <h2>Talvez você também se interesse por...</h2>
+                <h3>Angular 11 e Firebase</h3>
+                <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+              </div>
+            </div>
+            <div class="icon-button">
+              <div class="icon-card">
+                <ul>
+                  <li class="solid-heart hidden">
+                    <i class="fa-solid fa-heart icons-main" style="color: #cb1010;"></i>
+                  </li>
+                  <li class="heart">
+                    <i class="fa-regular fa-heart icons-main"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-bag-shopping icons-main icon-bag"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="button-card image-button-card">
+                <a href="#">
+                  <button>Saiba mais</button>
+                </a>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
     <section class="list-topics">
@@ -320,6 +405,95 @@
         </div>
       </div>
     </div>
+    <input class="input-group-alura" type="checkbox" name="group-alura" id="group-alura">
+    <div class="group-alura-list-mobile">
+      <div class="group-alura-list-mobile-container">
+        <div class="education">
+          <h3>EDUCAÇÃO</h3>
+          <ul>
+            <li>
+              <img src="src/group-alura/Caelum.png" alt="logo">
+              <p>Caelum</p>
+            </li>
+            <li>
+              <img src="src/group-alura/CasaDoCodigo.png" alt="logo">
+              <p>Casa do Código</p>
+            </li>
+          </ul>
+        </div>
+        <div class="education-online">
+          <h3>EDUCAÇÃO ONLINE</h3>
+          <ul>
+            <li>
+              <img src="src/group-alura/Alura.png" alt="logo">
+              <p>Alura</p>
+            </li>
+            <li>
+              <img src="src/group-alura/AluraEmpresas.png" alt="logo">
+              <p>Alura para Empresas</p>
+            </li>
+            <li>
+              <img src="src/group-alura/AluraLATAM.png" alt="logo">
+              <p>Alura LATAM</p>
+            </li>
+            <li>
+              <img src="src/group-alura/AluraStart.png" alt="logo">
+              <p>Alura Start</p>
+            </li>
+            <li>
+              <img src="src/group-alura/MusicDot.png" alt="logo">
+              <p>MusicDot</p>
+            </li>
+            <li>
+              <img src="src/group-alura/AluraLingua.png" alt="logo">
+              <p>Alura Língua</p>
+            </li>
+            <li>
+              <img src="src/group-alura/PM3.png" alt="logo">
+              <p>PM3</p>
+            </li>
+          </ul>
+        </div>
+        <div class="comunidade">
+          <h3>COMUNIDADE</h3>
+          <ul>
+            <li>
+              <img src="src/group-alura/HipstersTech.png" alt="logo">
+              <p>Hipsters ponto Tech</p>
+            </li>
+            <li>
+              <img src="src/group-alura/ScubaDev.png" alt="logo">
+              <p>Scuba Dev</p>
+            </li>
+            <li>
+              <img src="src/group-alura/LayersTech.png" alt="logo">
+              <p>Layers ponto Tech</p>
+            </li>
+            <li>
+              <img src="src/group-alura/LikeABoss.png" alt="logo">
+              <p>Like a Boss</p>
+            </li>
+            <li>
+              <img src="src/group-alura/CarreiraSemFronteira.png" alt="logo">
+              <p>Carreira sem Fronteira</p>
+            </li>
+            <li>
+              <img src="src/group-alura/HipstersJobs.png" alt="logo">
+              <p>Hipsters ponto jobs</p>
+            </li>
+            <li>
+              <img src="src/group-alura/GUJ.png" alt="logo">
+              <p>GUJ</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <label for="group-alura">
+      <div class="group-alura-mobile">
+        <h2>Grupo Alura</h2>
+      </div>
+    </label>
   </footer>
   <script src="index.js"></script>
 </body>
