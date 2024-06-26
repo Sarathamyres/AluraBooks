@@ -112,7 +112,12 @@
         <h2>Já sabe por onde começar?</h2>
         <p>Encontre em nossa estante o que precisa para o seu desenvolvimento!</p>
       </div>
-      <input type="text" placeholder="Qual será sua próxima leitura?" class="barra-search">
+     <div class="search">
+      <input type="text" id="id-search" placeholder="Qual será sua próxima leitura?" class="barra-search">
+      <label for="id-search">
+      <i class="fa-solid fa-magnifying-glass icon-barra-search"></i>
+    </label>
+     </div>
     </div>
   </header>
   <main>
@@ -120,7 +125,7 @@
       <h2 class="title-main">ÚLTIMOS LANÇAMENTOS</h2>
       <div class="main-container">
         <div class="carousel carousel1">
-          <i class="fa-solid fa-chevron-left chevron-left arrow"></i>
+          <i id="left" class="fa-solid fa-chevron-left chevron-left arrow"></i>
           <div class="carousel-container">
             <div class="gallery1">
               <img src="src/images/ApacheKafka.png" alt="livro Apache Kafka e Spring Book" class="item-img">
@@ -134,8 +139,9 @@
               <img src="src/images/Construct2.png" alt="livro Construct 2" class="item-img">
             </div>
           </div>
-          <i class="fa-solid fa-chevron-right chevron-right arrow"></i>
+          <i id="right" class="fa-solid fa-chevron-right chevron-right arrow"></i>
         </div>
+        
         <div class="card">
           <div class="text-card">
             <h2>Talvez você também se interesse por...</h2>
@@ -199,21 +205,21 @@
       <h2 class="title-main">MAIS VENDIDOS</h2>
       <div class="main-container">
         <div class="carousel carousel2">
-          <i class="fa-solid fa-chevron-left chevron-left arrow"></i>
-          <div class="carousel-container">
+          <i id="left2" class="fa-solid fa-chevron-left chevron-left arrow2"></i>
+          <div class="carousel-container carousel-container2">
             <div class="gallery2">
-              <img src="src/images/Portugol.png" alt="livro Portugol">
-              <img src="src/images/Tuning.png" alt=" livro Tuning">
-              <img src="src/images/UX.png" alt="livro UX">
-              <img src="src/images/Liderança.png" alt="livro Liderança em Design" class="item-img">
-              <img src="src/images/Javascript.png" alt="livro JavaScript Assertivo" class="item-img">
-              <img src="src/images/Guia Front-end.png" alt="livro Guia Front-End" class="item-img">
-              <img src="src/images/Arquitetura.png" alt="livro Arquitetura de software distribuido" class="item-img">
-              <img src="src/images/ApacheKafka.png" alt="livro Apache Kafka e Spring Book" class="item-img">
-              <img src="src/images/Gestão.png" alt=" livro Gestão de produtos">
+              <img src="src/images/Portugol.png" alt="livro Portugol" class="item-img2">
+              <img src="src/images/Tuning.png" alt=" livro Tuning" class="item-img2">
+              <img src="src/images/UX.png" alt="livro UX" class="item-img2">
+              <img src="src/images/Liderança.png" alt="livro Liderança em Design" class="item-img2">
+              <img src="src/images/Javascript.png" alt="livro JavaScript Assertivo" class="item-img2">
+              <img src="src/images/Guia Front-end.png" alt="livro Guia Front-End" class="item-img2">
+              <img src="src/images/Arquitetura.png" alt="livro Arquitetura de software distribuido" class="item-img2">
+              <img src="src/images/ApacheKafka.png" alt="livro Apache Kafka e Spring Book" class="item-img2">
+              <img src="src/images/Gestão.png" alt=" livro Gestão de produtos" class="item-img2">
             </div>
           </div>
-          <i class="fa-solid fa-chevron-right chevron-right arrow"></i>
+          <i id="right2" class="fa-solid fa-chevron-right chevron-right arrow2"></i>
         </div>
         <div class="card">
           <div class="text-card">

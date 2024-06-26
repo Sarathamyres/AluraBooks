@@ -34,17 +34,13 @@ nav .container-left {
   list-style: none;
   gap: 3em;
 }
-.icon-list a:hover{
+.icon-list a:hover {
   color: var(--orange);
 }
 
 @media (min-width: 700px) and (max-width: 1024px) {
-  .header-container nav{
+  .header-container nav {
     gap: 30em;
-  }
-  .container-left img {
-  }
-  .container-right ul li {
   }
 }
 @media (min-width: 1024px) {
@@ -118,7 +114,10 @@ nav .container-left {
     cursor: pointer;
     /*label de categorias*/
   }
-
+  .category:hover {
+    background: var(--gradient-blue);
+    padding: 1em;
+  }
   .div-list-category ul {
     list-style: none;
   }
@@ -146,9 +145,8 @@ nav .container-left {
     position: relative;
     left: 10em;
   }
-  .container-left .logo-header{
+  .container-left .logo-header {
     width: 50px;
-
   }
   .container-list {
     display: flex;
@@ -169,7 +167,7 @@ nav .container-left {
     font-family: "poppins";
     font-size: 1.6em;
   }
-  
+
   .icon-heart-header {
     display: none;
   }
