@@ -53,31 +53,29 @@
         </div>
         <div class="container-list">
           <ul class="list-principal">
-            <li class="list-item">
-              <input type="checkbox" id="category" name="category" class="input-category">
-              <label for="category" class="category">Categorias</label>
-              <div class="div-list-category">
-                <ul>
-                  <li class="list-category">
-                    <a href="#">
-                      FRONT-END</a>
-                  </li>
-                  <li class="list-category">
-                    <a href="#">
-                      INFRAESTRUTURA </a>
-                  </li>
-                  <li class="list-category">
-                    <a href="#">
-                      BUSINESS </a>
-                  </li>
-                  <li class="list-category">
-                    <a href="#">
-                      DESIGN & UX </a>
-                  </li>
-                </ul>
-              </div>
+            <li class="list-item category"><a href="#">Categorias</a>
             </li>
-            <li class="list-item"><a href="#">Favoritos</a></li>
+            <div class="div-list-category">
+              <ul>
+                <li class="list-category">
+                  <a href="#">
+                    FRONT-END</a>
+                </li>
+                <li class="list-category">
+                  <a href="#">
+                    INFRAESTRUTURA </a>
+                </li>
+                <li class="list-category">
+                  <a href="#">
+                    BUSINESS </a>
+                </li>
+                <li class="list-category">
+                  <a href="#">
+                    DESIGN & UX </a>
+                </li>
+              </ul>
+            </div>
+            <li class="list-item favorite"><a href="#">Favoritos</a></li>
             <li class="list-item"><a href="#">Minha Estante</a></li>
           </ul>
         </div>
@@ -96,13 +94,25 @@
                 <p>Minha sacola</p>
               </a>
             </li>
-            <li class="icon-list desktop">
+            <li class="icon-list li-icon-user desktop">
               <a href="#">
                 <i class="fa-regular fa-circle-user icons-header user-icon-item"></i>
-                <p>Meu perfil</p>
+                <p class="paragraph-user-icon">Meu perfil</p>
               </a>
             </li>
           </ul>
+          <div class="div-list-user">
+            <ul>
+              <li class="list-user">
+                <a href="#">
+                  Ver perfil</a>
+              </li>
+              <li class="list-user">
+                <a href="#">
+                  Sair</a>
+              </li>
+            </ul>
+          </div>
 
         </div>
       </nav>
@@ -208,15 +218,15 @@
           <i id="left2" class="fa-solid fa-chevron-left chevron-left arrow2"></i>
           <div class="carousel-container carousel-container2">
             <div class="gallery2">
-              <img src="src/images/Portugol.png" alt="livro Portugol" class="item-img2">
-              <img src="src/images/Tuning.png" alt=" livro Tuning" class="item-img2">
-              <img src="src/images/UX.png" alt="livro UX" class="item-img2">
-              <img src="src/images/Liderança.png" alt="livro Liderança em Design" class="item-img2">
-              <img src="src/images/Javascript.png" alt="livro JavaScript Assertivo" class="item-img2">
-              <img src="src/images/Guia Front-end.png" alt="livro Guia Front-End" class="item-img2">
-              <img src="src/images/Arquitetura.png" alt="livro Arquitetura de software distribuido" class="item-img2">
-              <img src="src/images/ApacheKafka.png" alt="livro Apache Kafka e Spring Book" class="item-img2">
-              <img src="src/images/Gestão.png" alt=" livro Gestão de produtos" class="item-img2">
+              <img src="src/images/Portugol.png" alt="livro Portugol" class="item-img">
+              <img src="src/images/Tuning.png" alt=" livro Tuning" class="item-img">
+              <img src="src/images/UX.png" alt="livro UX" class="item-img">
+              <img src="src/images/Liderança.png" alt="livro Liderança em Design" class="item-img">
+              <img src="src/images/Javascript.png" alt="livro JavaScript Assertivo" class="item-img">
+              <img src="src/images/Guia Front-end.png" alt="livro Guia Front-End" class="item-img">
+              <img src="src/images/Arquitetura.png" alt="livro Arquitetura de software distribuido" class="item-img">
+              <img src="src/images/ApacheKafka.png" alt="livro Apache Kafka e Spring Book" class="item-img">
+              <img src="src/images/Gestão.png" alt=" livro Gestão de produtos" class="item-img">
             </div>
           </div>
           <i id="right2" class="fa-solid fa-chevron-right chevron-right arrow2"></i>
@@ -384,7 +394,7 @@
               <p>Hipsters ponto Tech</p>
             </li>
             <li>
-              <img src="src/group-alura/ScubaDev.png" alt="">logo
+              <img src="src/group-alura/ScubaDev.png" alt="logo">
               <p>Scuba Dev</p>
             </li>
             <li>

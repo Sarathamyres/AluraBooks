@@ -43,11 +43,6 @@
   display: none;
 }
 
-.item-img {
-  width: 200px;
-  height: 200px;
-}
-
 @media (min-width: 701px) {
   .carousel-container {
     width: 80%;
@@ -106,3 +101,12 @@
     font-size: 15px;
     padding: 0.5em;
     border-radius: 50px;
+  }
+  .chevron-left {
+    left: 10px;
+  }
+
+  .chevron-right {
+    right: 10px;
+  }
+  }

@@ -5,8 +5,13 @@ header a {
   text-decoration: none;
 }
 .header-container {
-  width: 100%;
   padding: 2em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: var(--white);
 }
 .header-container nav {
   display: flex;
@@ -74,18 +79,19 @@ nav .container-left {
   }
   .container-list .list-principal {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 3em;
-    font-family: "poppins";
     font-size: 1.6em;
     cursor: pointer;
+    position: relative;
   }
-  .container-list .list-principal a {
+  .container-list .list-principal a , .div-list-user a , .div-list-favorite a{
     font-family: inherit;
     font-size: inherit;
     color: inherit;
   }
-  .color-category {
+  .color-background {
     background: var(--gradient-blue);
     color: var(--white);
     padding: 1em;
@@ -93,42 +99,41 @@ nav .container-left {
   .list-principal .list-item:hover {
     color: var(--orange);
   }
-  .input-category {
-    position: relative;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    outline: none;
-  }
-  .input-category:checked ~ .div-list-category {
-    display: block;
-  }
-  .div-list-category {
-    display: none;
+  
+  .div-list-category, .div-list-favorite{
     position: absolute;
+    top: 56px;
     background: var(--white);
-    font-family: "poppins";
-    top: 4.2em;
-    left: 19.83em;
+    display: one;
   }
-  .category {
-    cursor: pointer;
-    /*label de categorias*/
-  }
-  .category:hover {
-    background: var(--gradient-blue);
-    padding: 1em;
-  }
-  .div-list-category ul {
+  .div-list-category ul, .div-list-favorite ul{
     list-style: none;
   }
-  .div-list-category li {
+  .div-list-category li, .div-list-user li, .div-list-favorite li {
     color: var(--dark-blue);
     padding: 1em;
   }
-  .div-list-category li:hover {
+  .div-list-category li:hover, .div-list-user li:hover, .div-list-favorite li:hover{
     background: var(--dark-blue);
     color: var(--white);
+  }
+  .div-list-user{
+    background: var(--white);
+    position: absolute;
+    display: none;
+    top: 100px;
+    width: 150px;
+    right: 45px;
+  }
+  .div-list-user ul{
+    display: flex; 
+    flex-direction: column;
+    font-size: 1.6em;
+  }
+  .div-list-favorite{
+    width: 150px;
+    left: 137px;
+      
   }
 }
 @media (min-width: 1400px) {

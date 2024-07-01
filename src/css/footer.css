@@ -48,6 +48,7 @@ footer a {
 }
 .group-alura {
   display: none;
+  margin-left: 5em;
 }
 .group-alura-mobile {
   position: relative;
@@ -142,14 +143,39 @@ footer input[type="checkbox"] {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin: 0 auto;
     font-size: 1.4em;
     padding: 0.5em;
     color: gray;
+    cursor: pointer;
   }
 }
-@media (min-width:1024px){
+@media (max-width: 700px) {
+  .group-alura-container h3 {
+    font-size: 1.5em;
+  }
+  .group-alura-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
+  .group-alura-container ul li {
+    flex-direction: column;
+    font-size: 1em;
+  }
+  .group-alura-container ul li p {
+    white-space: nowrap;
+  }
+}
+@media (min-width: 1024px) {
   footer .container {
-  gap: 60px;
+    gap: 60px;
+  }
+  .group-alura {
+    margin-left: 10em;
+  }
+  .group-alura h2 {
+    padding: 2em 0;
   }
   .group-alura-container {
     justify-content: space-around;

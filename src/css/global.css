@@ -9,8 +9,10 @@
 img {
   max-width: 100%;
 }
+
 html {
   font-size: 62.5%;
+  font-family: "poppins";
 }
 :root {
   --color-black: rgba(0, 0, 0, 1);
