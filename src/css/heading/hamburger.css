@@ -37,10 +37,13 @@
   flex-direction: column;
   gap: 2em;
 }
-.list-hamburger ul li {
+.list-hamburger ul li{
   padding: 1em;
   font-size: 1.6em;
   color: var(--dark-blue);
+}
+.list-hamburger ul li a{
+  color: inherit;
 }
 .list-hamburger ul li:hover{
   background: var(--gradient-blue);

@@ -2,46 +2,88 @@ carouselsFunction();
 hamburgerFunction();
 categoryFunction();
 favoriteFunction();
-iconHoverFunction();
+userHoverFunction();
+bookFunction();
 
+const imgItemCarousel = document.querySelectorAll(".item-img");
 
-
-
-
-
-function iconHoverFunction() {
-  const user = document.querySelector(".li-icon-user");
-  const userList = document.querySelector(".div-list-user");
-  const iconColor = document.querySelector('.user-icon-item');
-  const paragraphColor = document.querySelector('.paragraph-user-icon');
-
-  user.addEventListener("mouseover", () => {
-    userList.style.display = "block";
-    if (userList.style.display === 'block') {
-      iconColor.style.color = "orange";
-      paragraphColor.style.color = 'orange';
-    }
+imgItemCarousel.forEach((imgItem) => {
+  imgItem.addEventListener("mouseover", () => {
+    imgItem.style.opacity = "0.5";
   });
-  userList.addEventListener("mouseleave", () => {
-    userList.style.display = "none";
-    if (userList.style.display === 'none') {
-      iconColor.style.color = "";
-      paragraphColor.style.color = "";
+  imgItem.addEventListener("mouseleave", () => {
+    imgItem.style.opacity = "1";
+  });
+});
+function bookFunction() {
+  const listItems = document.querySelectorAll(".container .list-item");
+
+  listItems.forEach((item) => {
+    const img = item.querySelector("img");
+    const description = item.querySelector(".description");
+    if (img && description) {
+      img.addEventListener("mouseover", () => {
+        description.style.display = "block";
+        img.style.opacity = "0.3";
+      });
+      description.addEventListener("mouseover", () => {
+        description.style.display = "block";
+        img.style.opacity = "0.3";
+      });
+      img.addEventListener("mouseleave", () => {
+        description.style.display = "none";
+        img.style.opacity = "1";
+      });
+      if (description.style.display === "block") {
+        img.style.opacity = "0.3";
+      } else {
+        img.style.opacity = "1";
+      }
     }
   });
 }
 
-function categoryFunction() {
-    const category = document.querySelector(".category");
-    const listCategory = document.querySelector(".div-list-category");
+const buttonProgramming = document.querySelector('.list-category-programming')
+buttonProgramming.addEventListener('click', () => {
+const bookProgramming = document.querySelector('.programming')
+  bookProgramming.style.display = 'block'
+})
 
-    category.addEventListener("mouseover", () => {
-        category.classList.add("color-background");
-        listCategory.style.display = "block";
+function userHoverFunction() {
+  if (window.innerWidth >= 1220) {
+    const user = document.querySelector(".li-icon-user");
+    const userList = document.querySelector(".div-list-user");
+    const iconColor = document.querySelector(".user-icon-item");
+    const paragraphColor = document.querySelector(".paragraph-user-icon");
+
+    user.addEventListener("mouseover", () => {
+      userList.style.display = "block";
+      if (userList.style.display === "block") {
+        iconColor.style.color = "orange";
+        paragraphColor.style.color = "orange";
+      }
     });
-    listCategory.addEventListener("mouseleave", () => {
-      category.classList.remove("color-background");
-      listCategory.style.display = "none";
+    userList.addEventListener("mouseleave", () => {
+      userList.style.display = "none";
+      if (userList.style.display === "none") {
+        iconColor.style.color = "";
+        paragraphColor.style.color = "";
+      }
+    });
+  }
+}
+
+function categoryFunction() {
+  const category = document.querySelector(".category");
+  const listCategory = document.querySelector(".div-list-category");
+
+  category.addEventListener("mouseover", () => {
+    category.classList.add("color-background");
+    listCategory.style.display = "block";
+  });
+  listCategory.addEventListener("mouseleave", () => {
+    category.classList.remove("color-background");
+    listCategory.style.display = "none";
   });
 }
 function hamburgerFunction() {

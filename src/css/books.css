@@ -1,0 +1,50 @@
+main.books {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+main.books h3 {
+  color: red;
+  display: flex;
+  padding: 1em 0;
+}
+main.books .container h2 {
+  font-size: 2.5em;
+  padding: 2em;
+  text-align: center;
+}
+main.books ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.books ul li {
+  width: 40%;
+}
+.programming,
+.front-end,
+.infrastructure,
+.business,
+.design-e-ux {
+  display: none;
+}
+
+.container .list-item {
+  position: relative;
+}
+.description {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  display: none;
+}
+.description a:not(:last-child) {
+  margin-right: 2em;
+}

@@ -9,6 +9,19 @@ main {
 .carousels-cards {
   width: 100%;
 }
+.gallery .item-img{
+  position: relative;
+}
+.description-carousel{
+  display: flex;
+  position: absolute;
+  left: 60px;
+  top: 35%;
+  display: none;
+ }
+ .description-carousel a:not(:last-child) {
+  margin-right: 2em;
+}
 .main-container {
   padding: 5em 0;
   width: 100%;

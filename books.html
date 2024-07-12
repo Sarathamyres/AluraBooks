@@ -12,9 +12,8 @@
   <link rel="stylesheet" href="src/css/global.css">
   <link rel="stylesheet" href="src/css/heading/header.css">
   <link rel="stylesheet" href="src/css/heading/hamburger.css">
-  <link rel="stylesheet" href="src/css/heading/header-banner.css">
   <link rel="stylesheet" href="src/css/main.css">
-  <link rel="stylesheet" href="src/css/carousel.css">
+  <link rel="stylesheet" href="src/css/books.css">
   <link rel="stylesheet" href="src/css/footer.css">
   <title>AluraBooks</title>
 </head>
@@ -58,15 +57,13 @@
           <div class="div-x-menu-hamburger">
             <i class="fa-solid fa-x x-menu-hamburger"></i>
           </div>
-          <a href="index.html">
-            <img src="src/images/Logo.svg" alt="Logo do AluraBooks" class="logo-header">
-          </a>
+          <a href="index.html"> <img src="src/images/Logo.svg" alt="Logo do AluraBooks" class="logo-header"></a>
           <h1 class="title">Alura<span>Books</span></h1>
         </div>
         <div class="container-list">
           <ul class="list-principal">
-            <li class="list-item category">Categorias</li>
-            <li class="list-item"><a href="#">Minha Estante</a></li>
+            <li class="list-item category"><a href="#">Categorias</a>
+            </li>
             <div class="div-list-category">
               <ul>
                 <li class="list-category">
@@ -106,7 +103,7 @@
             <li class="icon-list desktop">
               <a href="#">
                 <i class="fa-solid fa-bag-shopping
-               icons-header"></i>
+             icons-header"></i>
                 <p>Minha sacola</p>
               </a>
             </li>
@@ -133,218 +130,158 @@
         </div>
       </nav>
     </div>
-    <div class="header-banner">
-      <div class="text">
-        <h2>Já sabe por onde começar?</h2>
-        <p>Encontre em nossa estante o que precisa para o seu desenvolvimento!</p>
-      </div>
-      <div class="search">
-        <input type="text" id="id-search" placeholder="Qual será sua próxima leitura?" class="barra-search">
-        <label for="id-search">
-          <i class="fa-solid fa-magnifying-glass icon-barra-search"></i>
-        </label>
-      </div>
-    </div>
   </header>
-  <main>
-    <section class="carousels-cards">
-      <h2 class="title-main">ÚLTIMOS LANÇAMENTOS</h2>
-      <div class="main-container">
-        <div class="carousel carousel1">
-          <i id="left" class="fa-solid fa-chevron-left chevron-left arrow"></i>
-          <div class="carousel-container">
-            <div class="gallery gallery1">
-              <img src="src/images/ApacheKafka.png" alt="livro Apache Kafka e Spring Book" class="item-img">
-              <div class="description-carousel">
-                <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
-                <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+  <main class="books">
+    <h3 aria-label="Aviso">Clique na logo quando quiser voltar à página principal*</h3>
+    <section class="container programming">
+      <div class="programming-container">
+        <h2>Livros sobre Programação</h2>
+        <ul class="programming-list">
+          <li class="list-item">
+            <img src="src/images/Portugol.png" alt="livro lógica de programação em Portugol">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
               </div>
-              <img src="src/images/Liderança.png" alt="livro Liderança em Design" class="item-img">
-              <div class="description-carousel">
-                <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
-                <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+          </li>
+          <li class="list-item">
+            <img src="src/images/Javascript.png" alt="livro JavaScript">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
               </div>
-              <img src="src/images/Javascript.png" alt="livro JavaScript Assertivo" class="item-img">
-              <img src="src/images/Guia Front-end.png" alt="livro Guia Front-End" class="item-img">
-              <img src="src/images/Arquitetura.png" alt="livro Arquitetura de software distribuido" class="item-img">
-              <img src="src/images/ReactNative.png" alt="livro React Native" class="item-img">
-              <img src="src/images/MetricasAgeis.png" alt="livro Métricas Ágeis" class="item-img">
-              <img src="src/images/Gestão2.png" alt="livro Gestão de produtos" class="item-img">
-              <img src="src/images/Construct2.png" alt="livro Construct 2" class="item-img">
-            </div>
-          </div>
-          <i id="right" class="fa-solid fa-chevron-right chevron-right arrow"></i>
-        </div>
-
-        <div class="card">
-          <div class="text-card">
-            <h2>Talvez você também se interesse por...</h2>
-            <h3>Angular 11 e Firebase</h3>
-            <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
-            <div class="icon-card">
-              <ul>
-                <li class="solid-heart hidden">
-                  <i class="fa-solid fa-heart icons-main" style="color: #cb1010;"></i>
-                </li>
-                <li class="heart">
-                  <i class="fa-regular fa-heart icons-main ">
-                  </i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-bag-shopping icons-main icon-bag"></i>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="image-button-card">
-            <img src="src/images/angular-logo.png" alt="logo angular">
-            <a href="#">
-              <button>Saiba mais</button>
-            </a>
-          </div>
-        </div>
-        <div class="card-mobile">
-          <div class="card-mobile-container">
-            <div class="image-card image-button-card">
-              <img src="src/images/angular-logo.png" alt="logo angular">
-            </div>
-            <div class="text-card">
-              <h2>Talvez você também se interesse por...</h2>
-              <h3>Angular 11 e Firebase</h3>
-              <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
-            </div>
-          </div>
-          <div class="icon-button">
-            <div class="icon-card">
-              <ul>
-                <li class="solid-heart hidden">
-                  <i class="fa-solid fa-heart icons-main" style="color: #cb1010;"></i>
-                </li>
-                <li class="heart">
-                  <i class="fa-regular fa-heart icons-main"></i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-bag-shopping icons-main icon-bag"></i>
-                </li>
-              </ul>
-            </div>
-            <div class="button-card image-button-card">
-              <a href="#">
-                <button>Saiba mais</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="title-main">MAIS VENDIDOS</h2>
-      <div class="main-container">
-        <div class="carousel carousel2">
-          <i id="left2" class="fa-solid fa-chevron-left chevron-left arrow2"></i>
-          <div class="carousel-container carousel-container2">
-            <div class="gallery gallery2">
-              <img src="src/images/Portugol.png" alt="livro Portugol" class="item-img">
-              <img src="src/images/Tuning.png" alt=" livro Tuning" class="item-img">
-              <img src="src/images/UX.png" alt="livro UX" class="item-img">
-              <img src="src/images/Liderança.png" alt="livro Liderança em Design" class="item-img">
-              <img src="src/images/Javascript.png" alt="livro JavaScript Assertivo" class="item-img">
-              <img src="src/images/Guia Front-end.png" alt="livro Guia Front-End" class="item-img">
-              <img src="src/images/Arquitetura.png" alt="livro Arquitetura de software distribuido" class="item-img">
-              <img src="src/images/ApacheKafka.png" alt="livro Apache Kafka e Spring Book" class="item-img">
-              <img src="src/images/Gestão.png" alt=" livro Gestão de produtos" class="item-img">
-            </div>
-          </div>
-          <i id="right2" class="fa-solid fa-chevron-right chevron-right arrow2"></i>
-        </div>
-        <div class="card">
-          <div class="text-card">
-            <h2>Talvez você também se interesse por...</h2>
-            <h3>Angular 11 e Firebase</h3>
-            <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
-            <div class="icon-card">
-              <ul>
-                <li class="solid-heart hidden">
-                  <i class="fa-solid fa-heart icons-main" style="color: #cb1010;"></i>
-                </li>
-                <li class="heart">
-                  <i class="fa-regular fa-heart icons-main ">
-                  </i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-bag-shopping icons-main icon-bag"></i>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="image-button-card">
-            <img src="src/images/Perfil-escritora.png" alt="Perfil escritora">
-            <a href="#">
-              <button>Saiba mais</button>
-            </a>
-          </div>
-        </div>
-        <div class="card-mobile">
-          <div class="card-mobile-container">
-            <div class="image-card image-button-card">
-              <img src="src/images/Perfil-escritora.png" alt="Perfil escritora">
-            </div>
-            <div class="text-card">
-              <h2>Talvez você também se interesse por...</h2>
-              <h3>Angular 11 e Firebase</h3>
-              <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
-            </div>
-          </div>
-          <div class="icon-button">
-            <div class="icon-card">
-              <ul>
-                <li class="solid-heart hidden">
-                  <i class="fa-solid fa-heart icons-main" style="color: #cb1010;"></i>
-                </li>
-                <li class="heart">
-                  <i class="fa-regular fa-heart icons-main"></i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-bag-shopping icons-main icon-bag"></i>
-                </li>
-              </ul>
-            </div>
-            <div class="button-card image-button-card">
-              <a href="#">
-                <button>Saiba mais</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="list-topics">
-      <div class="list-topics-container">
-        <h2>TÓPICOS VISITADOS RECENTEMENTE</h2>
-        <ul>
-          <li>
-            <p><a href="#">Android</a></p>
           </li>
-          <li>
-            <p><a href="#">oo</a></p>
+          <li class="list-item">
+            <img src="src/images/Nodejs.png" alt="livro Node.js">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
           </li>
-          <li>
-            <p><a href="#">Marketing Digital</a></p>
+          <li class="list-item">
+            <img src="src/images/ReactNative.png" alt="livro React Native">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
           </li>
-          <li>
-            <p><a href="#">Agile</a></p>
+          <li class="list-item">
+            <img src="src/images/Construct2.png" alt="livro Construct 2">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
           </li>
-          <li>
-            <p><a href="#">Startup</a></p>
-          </li>
-          <li>
-            <p><a href="#">HTML & CSS</a></p>
-          </li>
-          <li>
-            <p><a href="#">Java</a></p>
-          </li>
-          <li><a href="#">Python</a></li>
         </ul>
       </div>
-
+    </section>
+    <section class="container front-end">
+      <div class=" front-end-container">
+        <h2>Livros de Front-End</h2>
+        <ul class="front-end">
+          <li class="list-item">
+            <img src="src/images/Guia Front-end.png" alt="livro Guia Front-End">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
+          </li>
+          <li class="list-item">
+            <img src="src/images/Angular.png" alt="livro Angular 11 e Firebase">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
+          </li>
+          <li class="list-item">
+            <img src="src/images/MEAN.png" alt="livro Mean">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
+          </li>
+          <li class="list-item">
+            <img src="src/images/Acessibilidade.png" alt="livro Acessibilidade na Web">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container infrastructure">
+      <div class="infrastructure-container">
+        <h2>Livros de Infraestrutura</h2>
+        <ul class="infrastructure-list">
+          <li class="list-item">
+            <img src="src/images/Portugol.png" alt="livro lógica de programação em Portugol">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
+          </li>
+          <li class="list-item">
+            <img src="src/images/ApacheKafka.png" alt="livro Apache Kafka e Spring Boot">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
+          </li>
+          <li class="list-item">
+            <img src="src/images/Tuning.png" alt="livro Tuning de SQL">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
+          </li>
+          <li class="list-item">
+            <img src="src/images/Arquitetura.png" alt=" Arquitetura de Software Distribuido">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container business">
+      <div class="business-container">
+        <h2>Livros de Business</h2>
+        <ul class="business-list">
+          <li class="list-item">
+            <img src="src/images/Gestão.png" alt="livro Gestao de produtos">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
+          </li>
+          <li class="list-item">
+            <img src="src/images/Gestão2.png" alt="livro Gestao de progutos 2°edição">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
+          </li>
+          <li class="list-item">
+            <img src="src/images/MetricasAgeis.png" alt="livro de Métricas Ágeis">
+            <div class="description">
+              <a href=""><i class="fa-regular fa-heart icons-header icon-heart-header"></i></a>
+              <a href=""><i class="fa-solid fa-bag-shopping icons-header"></i></a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container design-e-ux">
+      <div class="design_e_ux-container">
+        <h2>Livros de Design & UX </h2>
+        <ul class="design_e_ux-list">
+          <li class="list-item">
+            <img src="src/images/UX.png" alt="livro UX estratégico">
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer>

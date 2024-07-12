@@ -4,6 +4,9 @@ header {
 header a {
   text-decoration: none;
 }
+.logo-header {
+  cursor: pointer;
+}
 .header-container {
   padding: 2em;
   position: fixed;
@@ -43,7 +46,9 @@ nav .container-left {
 .icon-list a:hover {
   color: var(--orange);
 }
-
+.div-list-user {
+  display: none;
+}
 @media (min-width: 700px) and (max-width: 1024px) {
   .header-container nav {
     gap: 30em;
@@ -75,7 +80,7 @@ nav .container-left {
     font-weight: 400;
   }
   .container-right ul {
-    gap: 61px;
+    gap: 20px;
   }
   .container-list .list-principal {
     display: flex;
@@ -86,7 +91,9 @@ nav .container-left {
     cursor: pointer;
     position: relative;
   }
-  .container-list .list-principal a , .div-list-user a , .div-list-favorite a{
+  .container-list .list-principal a,
+  .div-list-user a,
+  .div-list-favorite a {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
@@ -99,25 +106,31 @@ nav .container-left {
   .list-principal .list-item:hover {
     color: var(--orange);
   }
-  
-  .div-list-category, .div-list-favorite{
+
+  .div-list-category,
+  .div-list-favorite {
     position: absolute;
     top: 56px;
     background: var(--white);
     display: one;
   }
-  .div-list-category ul, .div-list-favorite ul{
+  .div-list-category ul,
+  .div-list-favorite ul {
     list-style: none;
   }
-  .div-list-category li, .div-list-user li, .div-list-favorite li {
+  .div-list-category li,
+  .div-list-user li,
+  .div-list-favorite li {
     color: var(--dark-blue);
     padding: 1em;
   }
-  .div-list-category li:hover, .div-list-user li:hover, .div-list-favorite li:hover{
+  .div-list-category li:hover,
+  .div-list-user li:hover,
+  .div-list-favorite li:hover {
     background: var(--dark-blue);
     color: var(--white);
   }
-  .div-list-user{
+  .div-list-user {
     background: var(--white);
     position: absolute;
     display: none;
@@ -125,15 +138,14 @@ nav .container-left {
     width: 150px;
     right: 45px;
   }
-  .div-list-user ul{
-    display: flex; 
+  .div-list-user ul {
+    display: flex;
     flex-direction: column;
     font-size: 1.6em;
   }
-  .div-list-favorite{
+  .div-list-favorite {
     width: 150px;
     left: 137px;
-      
   }
 }
 @media (min-width: 1400px) {
@@ -178,6 +190,7 @@ nav .container-left {
     display: none;
   }
   .div-list-category {
+    display: none;
     left: 0em;
   }
 }
