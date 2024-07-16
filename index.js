@@ -43,12 +43,6 @@ function bookFunction() {
   });
 }
 
-const buttonProgramming = document.querySelector('.list-category-programming')
-buttonProgramming.addEventListener('click', () => {
-const bookProgramming = document.querySelector('.programming')
-  bookProgramming.style.display = 'block'
-})
-
 function userHoverFunction() {
   if (window.innerWidth >= 1220) {
     const user = document.querySelector(".li-icon-user");
@@ -136,6 +130,8 @@ function carouselsFunction() {
   const arrowstwo = document.querySelectorAll(".arrow2");
 
   window.addEventListener("load", () => {
+    if(carouselItems[0]){
+
     const firstCardWidth = carouselItems[0].clientWidth + 20; // 20px é o gap entre os itens
 
     arrows.forEach((arrow) => {
@@ -147,9 +143,12 @@ function carouselsFunction() {
         }
       });
     });
+  }
   });
 
   window.addEventListener("load", () => {
+    if(carouselItems[0]){
+
     const firstCardWidth = carouselItems[0].clientWidth + 20; //
 
     arrowstwo.forEach((arrow) => {
@@ -161,5 +160,6 @@ function carouselsFunction() {
         }
       });
     });
+  }
   });
 }
