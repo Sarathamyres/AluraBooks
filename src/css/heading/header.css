@@ -13,7 +13,7 @@ header a {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1000;
   background: var(--white);
 }
 .header-container nav {
@@ -42,6 +42,9 @@ nav .container-left {
   display: flex;
   list-style: none;
   gap: 2em;
+}
+.icon-list a{
+  color: inherit;
 }
 .icon-list a:hover {
   color: var(--orange);

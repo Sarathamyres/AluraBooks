@@ -4,7 +4,23 @@ categoryFunction();
 favoriteFunction();
 userHoverFunction();
 bookFunction();
+window.onload = function () {
+  var url = new URL(location.href);
+  if (url.pathname.indexOf("books.html") != -1) {
+    let hash = url.hash.replace("#", ".");
+    document.querySelector(hash).style.display = "block";
+  }
 
+  document.querySelectorAll(".list-category a").forEach((elem) => {
+    elem.addEventListener("click", function (e) {
+      let hash = elem.getAttribute("href").replace("books.html#", ".");
+      document.querySelectorAll("main.books section").forEach((elemNone) => {
+        elemNone.style.display = "none";
+      });
+      document.querySelector(hash).style.display = "block";
+    });
+  });
+};
 const imgItemCarousel = document.querySelectorAll(".item-img");
 
 imgItemCarousel.forEach((imgItem) => {
@@ -130,36 +146,34 @@ function carouselsFunction() {
   const arrowstwo = document.querySelectorAll(".arrow2");
 
   window.addEventListener("load", () => {
-    if(carouselItems[0]){
+    if (carouselItems[0]) {
+      const firstCardWidth = carouselItems[0].clientWidth + 20; // 20px é o gap entre os itens
 
-    const firstCardWidth = carouselItems[0].clientWidth + 20; // 20px é o gap entre os itens
-
-    arrows.forEach((arrow) => {
-      arrow.addEventListener("click", () => {
-        if (arrow.id === "left") {
-          carouselContainer.scrollLeft -= firstCardWidth;
-        } else {
-          carouselContainer.scrollLeft += firstCardWidth;
-        }
+      arrows.forEach((arrow) => {
+        arrow.addEventListener("click", () => {
+          if (arrow.id === "left") {
+            carouselContainer.scrollLeft -= firstCardWidth;
+          } else {
+            carouselContainer.scrollLeft += firstCardWidth;
+          }
+        });
       });
-    });
-  }
+    }
   });
 
   window.addEventListener("load", () => {
-    if(carouselItems[0]){
+    if (carouselItems[0]) {
+      const firstCardWidth = carouselItems[0].clientWidth + 20; //
 
-    const firstCardWidth = carouselItems[0].clientWidth + 20; //
-
-    arrowstwo.forEach((arrow) => {
-      arrow.addEventListener("click", () => {
-        if (arrow.id === "left2") {
-          carouselContainertwo.scrollLeft -= firstCardWidth;
-        } else {
-          carouselContainertwo.scrollLeft += firstCardWidth;
-        }
+      arrowstwo.forEach((arrow) => {
+        arrow.addEventListener("click", () => {
+          if (arrow.id === "left2") {
+            carouselContainertwo.scrollLeft -= firstCardWidth;
+          } else {
+            carouselContainertwo.scrollLeft += firstCardWidth;
+          }
+        });
       });
-    });
-  }
+    }
   });
 }
