@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="src/css/global.css">
   <link rel="stylesheet" href="src/css/heading/header.css">
   <link rel="stylesheet" href="src/css/heading/hamburger.css">
+  <link href="src/css/hamburgers.css" rel="stylesheet">
   <link rel="stylesheet" href="src/css/heading/header-banner.css">
   <link rel="stylesheet" href="src/css/main.css">
   <link rel="stylesheet" href="src/css/carousel.css">
@@ -24,7 +25,11 @@
     <div class="header-container">
       <nav>
         <div class="container-left">
-          <i class="fa-solid fa-bars icons-header icon-bars"></i>
+          <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
           <div class="list-hamburger">
             <h2>Categorias</h2>
             <ul>
@@ -54,9 +59,6 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="div-x-menu-hamburger">
-            <i class="fa-solid fa-x x-menu-hamburger"></i>
           </div>
           <a href="index.html">
             <img src="src/images/Logo.svg" alt="Logo do AluraBooks" class="logo-header">

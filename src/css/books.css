@@ -6,11 +6,6 @@ main.books {
   padding-top: 10em;
   padding-bottom: 10em;
 }
-main.books h3 {
-  color: red;
-  display: flex;
-  padding: 1em 0;
-}
 main.books .container h2 {
   font-size: 2.5em;
   padding: 2em;
@@ -26,6 +21,8 @@ main.books ul {
 }
 .books ul li {
   width: 40%;
+  display: flex;
+  justify-content: center;
 }
 .programming,
 .front-end,
@@ -34,17 +31,27 @@ main.books ul {
 .design-e-ux {
   display: none;
 }
-
 .container .list-item {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .description {
-  text-align: center;
+  width: 100%;
   position: absolute;
-  top: 45%;
-  left: 25%;
-  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+.description a {
+  font-size: 1em;
+}
+
 .description a:not(:last-child) {
-  margin-right: 2em;
+  margin-right: 2em; 
 }

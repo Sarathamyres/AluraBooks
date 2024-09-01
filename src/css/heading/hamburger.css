@@ -1,20 +1,6 @@
-.container-left .icon-bars {
+.container-left .hamburger {
   position: relative;
   cursor: pointer;
-}
-.div-x-menu-hamburger {
-  background: var(--dark-blue);
-  padding: 1em;
-  display: none;
-  cursor: pointer;
-}
-.div-x-menu-hamburger:hover {
-  background: var(--orange);
-}
-.x-menu-hamburger {
-  font-size: 30px;
-  text-align: center;
-  color: var(--white);
 }
 .list-hamburger {
   height: auto;
@@ -25,11 +11,13 @@
   z-index: 1;
   top: 7em;
 }
+.hamburger.is-active ~ .list-hamburger {
+  display: block;
+}
 .list-hamburger h2 {
   color: var(--orange);
   padding: 1em;
   font-size: 2em;
-
 }
 .list-hamburger ul {
   list-style: none;
@@ -37,15 +25,15 @@
   flex-direction: column;
   gap: 2em;
 }
-.list-hamburger ul li{
+.list-hamburger ul li {
   padding: 1em;
   font-size: 1.6em;
   color: var(--dark-blue);
 }
-.list-hamburger ul li a{
+.list-hamburger ul li a {
   color: inherit;
 }
-.list-hamburger ul li:hover{
+.list-hamburger ul li:hover {
   background: var(--gradient-blue);
   color: var(--white);
 }

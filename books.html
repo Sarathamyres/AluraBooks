@@ -12,18 +12,22 @@
   <link rel="stylesheet" href="src/css/global.css">
   <link rel="stylesheet" href="src/css/heading/header.css">
   <link rel="stylesheet" href="src/css/heading/hamburger.css">
+  <link rel="stylesheet" href="src/css/hamburgers.css">
   <link rel="stylesheet" href="src/css/main.css">
   <link rel="stylesheet" href="src/css/books.css">
   <link rel="stylesheet" href="src/css/footer.css">
   <title>AluraBooks</title>
 </head>
-
 <body>
   <header>
     <div class="header-container">
       <nav>
         <div class="container-left">
-          <i class="fa-solid fa-bars icons-header icon-bars"></i>
+          <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>     
           <div class="list-hamburger">
             <h2>Categorias</h2>
             <ul>
@@ -53,11 +57,8 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="div-x-menu-hamburger">
-            <i class="fa-solid fa-x x-menu-hamburger"></i>
-          </div>
-          <a href="index.html"> <img src="src/images/Logo.svg" alt="Logo do AluraBooks" class="logo-header"></a>
+          </div> 
+           <a href="index.html"> <img src="src/images/Logo.svg" alt="Logo do AluraBooks" class="logo-header"></a>
           <h1 class="title">Alura<span>Books</span></h1>
         </div>
         <div class="container-list">
@@ -132,7 +133,6 @@
     </div>
   </header>
   <main class="books" id="booklivro">
-    <h3 aria-label="Aviso">Clique na logo quando quiser voltar à página principal*</h3>
     <section class="container programming">
       <div class="programming-container">
         <h2>Livros sobre Programação</h2>

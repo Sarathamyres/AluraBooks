@@ -3,6 +3,7 @@ hamburgerFunction();
 categoryFunction();
 favoriteFunction();
 userHoverFunction();
+opacityimgCarousel();
 bookFunction();
 window.onload = function () {
   var url = new URL(location.href);
@@ -10,7 +11,6 @@ window.onload = function () {
     let hash = url.hash.replace("#", ".");
     document.querySelector(hash).style.display = "block";
   }
-
   document.querySelectorAll(".list-category a").forEach((elem) => {
     elem.addEventListener("click", function (e) {
       let hash = elem.getAttribute("href").replace("books.html#", ".");
@@ -21,16 +21,17 @@ window.onload = function () {
     });
   });
 };
-const imgItemCarousel = document.querySelectorAll(".item-img");
-
-imgItemCarousel.forEach((imgItem) => {
-  imgItem.addEventListener("mouseover", () => {
-    imgItem.style.opacity = "0.5";
+function opacityimgCarousel() {
+  const imgItemCarousel = document.querySelectorAll(".item-img");
+  imgItemCarousel.forEach((imgItem) => {
+    imgItem.addEventListener("mouseover", () => {
+      imgItem.style.opacity = "0.5";
+    });
+    imgItem.addEventListener("mouseleave", () => {
+      imgItem.style.opacity = "1";
+    });
   });
-  imgItem.addEventListener("mouseleave", () => {
-    imgItem.style.opacity = "1";
-  });
-});
+}
 function bookFunction() {
   const listItems = document.querySelectorAll(".container .list-item");
 
@@ -82,7 +83,6 @@ function userHoverFunction() {
     });
   }
 }
-
 function categoryFunction() {
   const category = document.querySelector(".category");
   const listCategory = document.querySelector(".div-list-category");
@@ -97,26 +97,28 @@ function categoryFunction() {
   });
 }
 function hamburgerFunction() {
-  const hamburger = document.querySelector(".icon-bars");
-  const cancel = document.querySelector(".div-x-menu-hamburger");
-  const listHamburger = document.querySelector(".list-hamburger");
+const hamburger = document.querySelector(".hamburger");
+const listHamburgers = document.querySelectorAll('.list-hamburger .list-category')
 
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.add("hidden");
-    if (hamburger.classList.contains("hidden")) {
-      cancel.style.display = "block";
-      listHamburger.style.display = "block";
-    }
-    cancel.addEventListener("click", () => {
-      cancel.style.display = "none";
-      if (cancel.style.display === "none") {
-        hamburger.classList.remove("hidden");
-        listHamburger.style.display = "none";
-      }
-    });
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("is-active");
   });
+  document.addEventListener("scroll", function () {
+    if (hamburger.classList.contains("is-active")) {
+      hamburger.classList.remove("is-active");
+    }
+  });
+  window.addEventListener("resize", function () {
+    if (hamburger.classList.contains("is-active")) {
+      hamburger.classList.remove("is-active");
+    }
+  });
+  listHamburgers.forEach(function(list){
+    list.addEventListener('click', function(){
+      hamburger.classList.remove("is-active");
+    })
+  })
 }
-
 function favoriteFunction() {
   const iconFavorite = document.querySelector(".heart");
   const iconSolid = document.querySelector(".solid-heart");
@@ -137,7 +139,6 @@ function favoriteFunction() {
     });
   });
 }
-
 function carouselsFunction() {
   const arrows = document.querySelectorAll(".arrow");
   const carouselContainer = document.querySelector(".carousel-container");

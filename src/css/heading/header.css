@@ -43,7 +43,7 @@ nav .container-left {
   list-style: none;
   gap: 2em;
 }
-.icon-list a{
+.icon-list a {
   color: inherit;
 }
 .icon-list a:hover {
@@ -88,6 +88,7 @@ nav .container-left {
   .container-list .list-principal {
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
     gap: 3em;
     font-size: 1.6em;
@@ -172,7 +173,7 @@ nav .container-left {
   .container-list {
     display: flex;
     position: absolute;
-    left: 40em;
+    left: 43em;
   }
   .container-right ul .desktop a {
     display: flex;
@@ -188,7 +189,6 @@ nav .container-left {
     font-family: "poppins";
     font-size: 1.6em;
   }
-
   .icon-heart-header {
     display: none;
   }
